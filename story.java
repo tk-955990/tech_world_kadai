@@ -1,11 +1,11 @@
 package kadai;
 import java.util.Scanner;
-public class story {
+public class Story {
 	public static void main(String[]args) {
 
 		Scanner scanner = new Scanner(System.in);        //勇者の生成
 
-		hero h =new hero();
+		Hero h =new Hero();
 		System.out.println("勇者の名前を入力してください");
 		h.name =scanner.nextLine();
 
@@ -29,7 +29,7 @@ public class story {
         
         Scanner scanner2=new Scanner(System.in);          //怪物の生成
         
-        monster m =new monster();
+        Monster m =new Monster();
         System.out.println("モンスターの名前を入力してください");
         m.name  =scanner2.nextLine();
         
@@ -53,7 +53,7 @@ public class story {
         
         Scanner scanner3=new Scanner(System.in);           //魔法使いの生成
         
-        magician mg =new magician();
+        Magician mg =new Magician();
         System.out.println("魔法使いの名前を入力してください");
         mg.name =scanner3.nextLine();
         
