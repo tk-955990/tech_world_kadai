@@ -8,6 +8,11 @@ public class Magician {
 	int mp;
 	int m_at; // 魔法での攻撃
 
+	Magician(String name) {
+		this.name = name;
+		this.hp   = 100;
+	}
+
 	void attack() {
 		System.out.println(this.name + "の攻撃！！");
 		System.out.println("相手に" + this.at + "ポイントのダメージを与えた！！");

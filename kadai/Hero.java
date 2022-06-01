@@ -7,6 +7,11 @@ public class Hero {
 	int at;
 	int df;
 
+	Hero(String name) {
+		this.name = name;
+		this.hp   = 200;
+	}
+
 	void attack() {
 		System.out.println(this.name + "の攻撃！！");
 		System.out.println("怪物に" + this.at + "ポイントのダメージを与えた！！");

@@ -7,6 +7,11 @@ public class Monster {
 	int at;
 	int df;
 
+	Monster(String name) {
+		this.name = name;
+		this.hp   = 300;
+	}
+
 	void attack() {
 		System.out.println(this.name + "の攻撃！！！");
 		System.out.println(this.at + "ポイントのダメージを受けた");
