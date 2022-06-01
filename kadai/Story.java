@@ -76,7 +76,7 @@ public class Story {
 
 		LOOP_I: for (int i = 0; i < 5; i++) {
 			System.out.println("< –‚–@g‚¢‚Ììí‚ÍH >");
-			System.out.println("UŒ‚:1 UŒ‚–‚–@:2 ‰ñ•œ–‚–@:3 ‹xŒe:4 I—¹:5dd");
+			System.out.println("UŒ‚:1 UŒ‚–‚–@:2 ‰ñ•œ–‚–@:3 ‹xŒe:4 I—¹:5");
 
 			int getCommand = new java.util.Scanner(System.in).nextInt();
 
