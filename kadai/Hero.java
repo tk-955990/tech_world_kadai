@@ -7,10 +7,9 @@ public class Hero {
 	int at;
 	int df;
 
-	Hero(String name,int hp,int at) {
-		this.name=name;
-		this.hp  =hp;
-		this.at  =at;
+	Hero(String name) {
+		this.name = name;
+		this.hp   = 200;
 	}
 
 	void attack() {
