@@ -7,10 +7,7 @@ public class Story {
 
 		Scanner scanner = new Scanner(System.in); // —EÒ‚Ì¶¬
 
-		Hero h = new Hero("—EÒ");
-
-		System.out.println("—EÒ‚ÌUŒ‚—Í‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
-		h.at = scanner.nextInt();
+		Hero h = new Hero("—EÒ",200,50);
 
 		System.out.println("—EÒ‚Ì–hŒä—Í‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
 		h.df = scanner.nextInt();
