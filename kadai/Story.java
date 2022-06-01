@@ -72,9 +72,41 @@ public class Story {
 		System.out.println("MP:" + mg.mp);
 		System.out.println("攻撃魔法力:" + mg.m_at);
 
+		Scanner scanner4 = new Scanner(System.in);
+
+		LOOP_I: for (int i = 0; i < 5; i++) {
+			System.out.println("< 魔法使いの作戦は？ >");
+			System.out.println("攻撃:1 攻撃魔法:2 回復魔法:3 休憩:4 終了:5dd");
+
+			int getCommand = new java.util.Scanner(System.in).nextInt();
+
+			switch (getCommand) {
+			case 1:
+				mg.attack();
+				break;
+			case 2:
+				mg.magic_Attack();
+				break;
+			case 3:
+				mg.magic_Recovery();
+				break;
+			case 4:
+				mg.heal();
+
+				break;
+			case 5:
+				break LOOP_I;
+			}
+			System.out.println("【魔法使い:ステータス】");
+			System.out.println("体力:" + mg.hp);
+			System.out.println("MP:" + mg.mp);
+		}
+		System.out.println("魔法使いのターン終了");
+
 		scanner.close();
 		scanner2.close();
 		scanner3.close();
+		scanner4.close();
 	}
 
 }
